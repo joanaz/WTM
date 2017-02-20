@@ -1,5 +1,5 @@
-# Docker-based instructions, for your laptop
-You have found the Docker-based instructions. This is the recommended approach for this workshop.
+# Instructions to run the workshop image on your laptop 
+This is a good option if you prefer to work locally, and will bring your own laptop to the workshop.
 
 ### Why do you recommend using Docker?
 If you use the Docker image, you won't have to spend time installing any other libraries or dependencies. The image is configured to work out-of-the-box. You will, of course, have to install Docker, and learn how to use it.
@@ -97,7 +97,7 @@ Note: any data you create inside the container that you *do not* copy to the sha
 
 ## Step 6. Start an IPython Notebook server
 
-In this step, we will start an IPython Notebook serving that runs inside the container. We will then connect to it using a web browser on your laptop.
+In this step, we will start an IPython Notebook server that runs inside the container. We will then connect to it using a web browser on your laptop.
 
 **Step 6a)** Start the notebook server.
 
@@ -106,19 +106,27 @@ In this step, we will start an IPython Notebook serving that runs inside the con
 # sh notebook.sh
 ```
 
-You will see output on your terminal to indicate the server is running. To exit it later, press *Control-C*. 
+You will see output on your terminal to indicate the server is running. Later, if you want to stop the notebook server, press *Control-C*. 
 
-**Step 6b)** Use a web browser to connect to the server
+**Step 6b)** Copy the login token
+
+Notice the second from the last line contains a login token. Copy this; you will need it in a moment to connect to the server.
+
+![Token](images/token.png?raw=true)
+
+**Step 6c)** Use a web browser to connect to the server
 
 Open a web browser on your laptop. Enter ```localhost:8888``` in the address bar.
 
 Your browser window should look like this. 
 
-![A picture of a directory in a web browser](notebook.png?raw=true)
+![Login screen](images/login.png?raw=true)
 
-This is because we mapped port *8888* on your laptop to port *8888* on the container, in *Step 4*.
+Paste the login token you coped in the previous step to connect to the server. Your window should now look like this.
 
-You can now close your browser window, and stop the server on the container.
+![A picture of a directory in a web browser](images/notebook.png?raw=true)
+
+You can now close your browser window, and stop the notebook server on the container.
 
 ## That's it!
 You now know all the commands you need to use the Docker container for this workshop. To stop the container, type

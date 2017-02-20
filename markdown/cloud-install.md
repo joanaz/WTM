@@ -145,8 +145,7 @@ You will see a new row in the shared directory, with a blue upload button on the
 
 ![Upload3](../images/upload3.png?raw=true)
 
-And your image is now availabe on the container. The path to this directory on the container is ````/workshop/shared```.
-
+And your image is now availabe on the container. The path to this directory on the container is ```/workshop/shared```.
 
 ## If you need to restart the container later
 
@@ -161,3 +160,5 @@ Once the workshop container is running again, you can exec back into it like thi
 ```shell
 docker exec -it <container_id> bash
 ```
+# Next steps.
+That's it! You now know how to run commands on the running container, and how to upload and download images. Preview the [exercise](markdown/exercises.md) instructions, if you like.

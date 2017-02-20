@@ -7,7 +7,7 @@
 
 # Agenda <a name="agenda"></a>
 
-In this workshop, you'll explore two approaches to Style Transfer, a technique that blends the *style* of an image with the *content* of another. You'll create beautiful artwork like this:
+During this workshop, you'll explore two approaches to Style Transfer, a technique that blends the *style* of an image with the *content* of another. You'll create beautiful artwork like this:
 
 <p align="center">
 <img src = 'images/ex1.jpg' height='400px'>
@@ -21,7 +21,7 @@ Created using <a href="https://github.com/tensorflow/magenta/tree/master/magenta
 Created using <a href="https://github.com/lengstrom/fast-style-transfer/">Fast Style Transfer<a/>
 </p>
 
-As time remains - in part two of the workshop, you'll gain experience writing a basic TensorFlow program. We'll work with (you guessed it) handwritten digits. But, our main goal is to get you started exploring Style Transfer.
+As time remains, you'll also gain experience writing a basic TensorFlow program. We'll work with (you guessed it) handwritten digits. That said, our main goal is to get you started exploring Style Transfer - because - it's awesome.
 
 <p align="center">
 <img src = 'images/digit.png' width='28px'>
@@ -33,17 +33,19 @@ Good olde MNIST.
 # Installation instructions
 Our goal is to make it as easy as possible for you to particapte in the workshop. 
 
-You can either bring a laptop, or you may use a loaner Chromebook we provide on site. Either way, please install the software you need in advance (either on your laptop, or by preparing a Cloud VM) as described in these instructions. The easiest way is to use a Docker image we've provided. 
+You can either bring a laptop, or you may use a loaner Chromebook we provide on site. Either way, please install the software you need in advance (either on your laptop, or, by preparing a Cloud VM) as described in these instructions.
+
+The easiest way is to use a Docker image we provide. 
 
 <a name="option1"></a>
-### Option 1: Install locally using Docker 
+### Option 1: Install locally 
+
 If you are bringing a laptop and want to install everything you need locally, please see these [instructions](markdown/install-local.md) to learn how to install and use the Docker image on your laptop. 
 
 <a name="option2"></a>
-### Option 2: Prepare a Cloud VM and install Docker on it
-If you are using a loaner Chromebook, or prefer to work in the Cloud, please see these [instructions](markdown/install-cloud.md) to learn how to configure a Cloud-based VM and install our Docker image on it.
+### Option 2: Prepare a Cloud VM
 
-The above instructions will also walk you through the mechanics of using the image. Please practice in advance, if you have time.
+If you are using a loaner Chromebook, or prefer to work in the Cloud, please see these [instructions](markdown/install-cloud.md) to learn how to configure a Cloud-based VM, and how to install and use the Docker image on it.
 
 ### Option 3: Manual install
 If you are an experienced developer and prefer not to use Docker, you may install the libraries you need [manually](markdown/install-manual.md).

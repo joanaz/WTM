@@ -1,5 +1,7 @@
 # Manual install
-You have found the manual installation instructions. If you'd prefer an easier way, please see our [Docker-based installation guide](markdown/install-and-use-docker.md). If you're sure you want to install manually, here's a list of libraries you'll need. Note: because this is a short workshop, the instructors may not have time to help you debug installation issues if they arrise. This approach is not supported. 
+You have found the manual installation instructions. If you'd prefer an easier way, please consider installing locally or in the Cloud using Docker, as described in the [Readme](../README.md). If you're sure you want to install manually, here's a list of libraries you'll need. Note: because this is a short workshop, the instructors may not have time to help you debug installation issues that may arrise. This approach is not supported. 
+
+For reference, here's the [Dockerfile](../Dockerfile) we used to build the container.
 
 Here are the libraries you'll need:
 

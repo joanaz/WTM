@@ -33,9 +33,7 @@ Good olde MNIST.
 # Installation instructions
 Our goal is to make it as easy as possible for you to particapte in the workshop. 
 
-You can either bring a laptop, or you may use a loaner Chromebook we provide on site. Either way, please install the software you need in advance (either on your laptop, or by preparing a Cloud VM) as described in these instructions.
-
-The easiest way is to use a Docker image we've provided. 
+You can either bring a laptop, or you may use a loaner Chromebook we provide on site. Either way, please install the software you need in advance (either on your laptop, or by preparing a Cloud VM) as described in these instructions. The easiest way is to use a Docker image we've provided. 
 
 <a name="option1"></a>
 ### Option 1: Install locally using Docker 

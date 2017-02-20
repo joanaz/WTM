@@ -20,15 +20,15 @@ Sign up for a [free trial](https://cloud.google.com/free-trial/) of Google Cloud
 1. Enter "Google Compute Engine API" in the search box and click it when it appears in the list of results.
 1. Click on “Enable” (top-middle of page).
 
-![Hamburger menu](images/hamburger.png)  
+![Hamburger menu](../images/hamburger.png)  
 
-![API Manager](images/api_manager.png)
+![API Manager](../images/api_manager.png)
 
 ### 2. Connect to your project's Cloud Shell
 
 Click on the Cloud Shell icon (leftmost icon in the set of icons at top-right of the page).
 
-![Cloud Shell](images/cloudshell.png)
+![Cloud Shell](../images/cloudshell.png)
 
 ### 3. Create a container-optimized image in GCE
 
@@ -84,7 +84,7 @@ You will see output on your terminal to indicate the server is running. Later, i
 
 Notice the second from the last line contains a login token. Copy this; you will need it in a moment to connect to the server.
 
-![Token](images/token.png?raw=true)
+![Token](../images/token.png?raw=true)
 
 **Step 7c)** Use a web browser on your laptop or Chromebook to connect to the server
 
@@ -92,11 +92,11 @@ Open a web browser on your laptop. Enter ```localhost:8888``` in the address bar
 
 Your browser window should look like this. 
 
-![Login screen](images/login.png?raw=true)
+![Login screen](../images/login.png?raw=true)
 
 Paste the login token you coped in the previous step to connect to the server. Your window should now look like this.
 
-![A picture of a directory in a web browser](images/notebook.png?raw=true)
+![A picture of a directory in a web browser](../images/notebook.png?raw=true)
 
 ## If you need to restart the container later
 

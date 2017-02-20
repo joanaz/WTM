@@ -112,7 +112,7 @@ You will see output on your terminal to indicate the server is running. Later, i
 
 Notice the second from the last line contains a login token. Copy this; you will need it in a moment to connect to the server.
 
-![Token](images/token.png?raw=true)
+![Token](../images/token.png?raw=true)
 
 **Step 6c)** Use a web browser to connect to the server
 
@@ -120,11 +120,11 @@ Open a web browser on your laptop. Enter ```localhost:8888``` in the address bar
 
 Your browser window should look like this. 
 
-![Login screen](images/login.png?raw=true)
+![Login screen](../images/login.png?raw=true)
 
 Paste the login token you coped in the previous step to connect to the server. Your window should now look like this.
 
-![A picture of a directory in a web browser](images/notebook.png?raw=true)
+![A picture of a directory in a web browser](../images/notebook.png?raw=true)
 
 You can now close your browser window, and stop the notebook server on the container.
 

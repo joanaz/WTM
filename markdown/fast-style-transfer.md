@@ -4,9 +4,14 @@
 
 Use a web browser to download your favorite small [image](https://upload.wikimedia.org/wikipedia/commons/a/af/Cara_de_quem_caiu_do_caminh%C3%A3o..._%28cropped%29.jpg) to your laptop. **Tip:** to begin, use an image of about 640x480 or smaller. You can try larger images later, depending on the speed of your machine.
 
-### Step 2. Save the image to the shared directory
+### Step 2. Share the image with the running container
+
+*If you are running locally*
 
 Save the image to the shared folder you mounted when you started the Docker container. If you used the default directory in the [instructions](install-and-use-docker.md), this will be```~/shared```.
+
+*If you are running in the Cloud*
+Upload the image through the notebook server UI as described in the [cloud instructions](cloud-install.md).
 
 ### Step 3. Understand the example script
 
@@ -42,19 +47,29 @@ This will stylize a sample image included with the container:
 In the style of this painting:
 <p align="center"><img src = 'container/sample-images/udnie.jpg' height='400px'></p>
 
-If everything is working properly, when it finishes, you should see a stylized image of a basset appear in ```~/shared``` on your laptop.
+*If you are running locally*
+If everything is working properly, when it finishes, you should see a stylized image of a basset appear in ```~/shared``` on your laptop. If you don't see the image, check that you properly mounted a shared directory by referring to the [Docker instructions](markdown/install-and-use-docker.md). 
+
+*If you are running on the Cloud*
+If you are running in the Cloud, you will see a new file inside the ```shared``` directory in the notebook server UI (you will have to refresh your browser to see it).
 
 <p align="center"><img src = 'images/basset_udnie.jpg' height='400px'></p>
 
-If you don't see the image, check that you properly mounted a shared directory by referring to the [Docker instructions](markdown/install-and-use-docker.md)
-
 ### Step 4. Modify the script to work with your input image
-Now it's time to stylize your own image. For example, imagine your image is saved as ```cat.jpg``` inside the shared directory ```~/shared```  on your laptop. Then you would run these commands on the terminal connected to the Docker container to produce an image called ```cat_styled.jpg``` inside that same folder.
+Now it's time to stylize your own image. 
+
+*If you are running locally*
+For example, imagine your image is saved as ```cat.jpg``` inside the shared directory ```~/shared```  on your laptop. Then you would run these commands on the terminal connected to the Docker container to produce an image called ```cat_styled.jpg``` inside that same folder.
 
 ```
 # cd /workshop/fast-style-transfer
 # python evaluate.py --checkpoint /workshop/fast-style-transfer/models/udnie.ckpt --in-path /workshop/shared/cat.jpg --out-path /workshop/shared/cat_styled.jpg
 ```
+
+*If you are running on the Cloud*
+First, upload your image to the ```shared``` folder using the notebook server's UI, then run the above command.
+
+
 ### Step 5. Try a different style
 
 Want to change the style? The author of the github repo we're using has helpfully provided several pre-trained models for different styles that you can choose from. These are already included in the Docker image.

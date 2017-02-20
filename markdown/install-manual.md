@@ -14,4 +14,4 @@ Here are the libraries you'll need:
 * [Jupyter](http://jupyter.readthedocs.io/en/latest/install.html)
 
 ### Finished installing?
-Great! Preview the [exercise](markdown/exercises.md) instructions.
+Great! Preview the [exercise](exercises.md) instructions.

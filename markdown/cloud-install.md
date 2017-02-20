@@ -161,4 +161,4 @@ Once the workshop container is running again, you can exec back into it like thi
 docker exec -it <container_id> bash
 ```
 # Next steps.
-That's it! You now know how to run commands on the running container, and how to upload and download images. Preview the [exercise](markdown/exercises.md) instructions, if you like.
+That's it! You now know how to run commands on the running container, and how to upload and download images. Preview the [exercise](exercises.md) instructions, if you like.

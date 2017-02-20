@@ -11,6 +11,7 @@ In this exercise, you'll experiment with blending different styles and images, a
 As before, download an image and save it to the shared directory on your laptop. There are also sample images you can use inside the container at ```/workshop/sample-images```. We recommend beginning with relatively small images, of around 640x480.
 
 *If you are running on the Cloud*
+
 As before, upload an image using the Notebook Server UI.
 
 ## Step 2. Understand the example script
@@ -36,6 +37,7 @@ To get started, the only argument you'll have to change is ```--input_image``` t
 Recall, the shared directory is mounted as ```/workshop/shared```, so if your image is called ```cat.jpg```, then you'll want to change ```--input_image``` to ```/workshop/shared/cat.jpg```).
 
 *If you are running on the Cloud*
+
 Upload an image to the shared directory using the Notebook Server UI. This is mounted inside the container as ```/workshop/shared```.
 
 First, try running this script with the default arguments, and verify you see a stylized image appear in ```~/shared``` when it completes. *If you are running on the Cloud* you will have to refresh your web browser after the script completes. Next, change the ```input-image``` to point to your image, and verify you can stylize it.
@@ -43,9 +45,9 @@ First, try running this script with the default arguments, and verify you see a 
 ## Try different styles
 Now it's time to use different styles. You can see images of all the available styles in the pre-trained varied mode [here](https://goo.gl/1UDjBE). Here are a couple:
 
-<p align="center"><img src="images/basset_1.png" height="232px"></br>Style 1</p>
+<p align="center"><img src="../images/basset_1.png" height="232px"></br>Style 1</p>
 
-<p align="center"><img src="images/basset_19.png" height="232px"></br>Style 19</p>
+<p align="center"><img src="../images/basset_19.png" height="232px"></br>Style 19</p>
 
 Experiment with different styles and input images. If you produce one you really like, considered uploading it for other folks to see.
 
@@ -66,7 +68,7 @@ You can also use a weighted combination of styles. For example:
 --which_styles="{6:0.7,7:0.3}"
 ```
 
-<p align="center"><img src="images/basset_6_700_7_300.png" height="232px"></br>Weighted combination of styles 6 and 7</p>
+<p align="center"><img src="../images/basset_6_700_7_300.png" height="232px"></br>Weighted combination of styles 6 and 7</p>
 
 This will blend style 6 with weight 0.7 and style 7 with weight 0.3. As before, you can blend any number of styles. Notice the syntax here is a Python dictionary of style -> weight.
 

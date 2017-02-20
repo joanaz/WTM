@@ -31,20 +31,19 @@ Good olde MNIST.
 
 <a name="install"></a>
 # Installation instructions
-Our goal is to make it as easy as possible for you to particapte in the workshop. You can either bring a laptop, or you may use a loaner Chromebook we will provide on site. Either way, please prepare in advance by following these instructions.
+Our goal is to make it as easy as possible for you to particapte in the workshop. 
 
-* If you would like to bring a laptop to the event, please choose either [Option 1](#option1) or [Option 2](#option2).
-* If you would like to use a loaner Chromebook, please choose [Option 2](#option2).
+You can either bring a laptop, or you may use a loaner Chromebook we provide on site. Either way, please install the software you need in advance (either on your laptop, or by preparing a Cloud VM) as described in these instructions.
 
-The easiest way to participate in the workshop is to use a Docker image we've prepared that has everything you need already configured and installed. Options 1 and 2 will guide you through installing that, either on your laptop, or in the Cloud.
+The easiest way is to use a Docker image we've provided. 
 
 <a name="option1"></a>
-### Option 1: Use Docker on your laptop 
-Please see these [instructions](markdown/install-and-use-docker.md) to install Docker and learn how to use this image on your laptop.
+### Option 1: Install locally using Docker 
+If you are bringing a laptop and want to install everything you need locally, please see these [instructions](markdown/install-and-use-docker.md) to learn how to install and use the Docker image. 
 
 <a name="option2"></a>
-### Option 2: Use Docker in the Cloud
-You can also install our Docker image on a Cloud-based VM. Please see these [instructions](markdown/cloud-install.md) to learn how.
+### Option 2: Prepare a Cloud VM and install Docker on it
+If you are using a loaner Chromebook, or you prefer to work in the Cloud, please see these  [instructions](markdown/cloud-install.md) to learn how to configure a Cloud-based VM and install our Docker image on it.
 
 ### Option 3: Manual install
 If you are an experienced developer and prefer not to use Docker, you may install the libraries you need [manually](markdown/install-manual.md).

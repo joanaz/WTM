@@ -36,9 +36,11 @@ Our goal is to make it as easy as possible for you to particapte in the workshop
 * If you would like to bring a laptop to the event, please choose either [Option 1](#option1) or [Option 2](#option2).
 * If you would like to use a loaner Chromebook, please choose [Option 2](#option2).
 
+The easiest way to participate in the workshop is to use a Docker image we've prepared that has everything you need already configured and installed. Options 1 and 2 will guide you through installing that, either on your laptop, or in the Cloud.
+
 <a name="option1"></a>
 ### Option 1: Use Docker on your laptop 
-The easiest way to participate in the workshop is to use a Docker image we've prepared that has everything you need already configured and installed. Please see these [instructions](markdown/install-and-use-docker.md) to install Docker and learn how to use this image on your laptop.
+Please see these [instructions](markdown/install-and-use-docker.md) to install Docker and learn how to use this image on your laptop.
 
 <a name="option2"></a>
 ### Option 2: Use Docker in the Cloud

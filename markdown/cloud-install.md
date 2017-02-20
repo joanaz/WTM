@@ -1,8 +1,6 @@
 # Instructions to run the workshop image on the Cloud 
 This is a good option if you are using a loaner Chromebook at the workshop, or if you prefer to work in the Cloud. These instructions will show you how to start a Google Compute Engine (GCE) VM with Docker installed, and how to run the container there.
 
-* [Create a Google Cloud Platform account](#create)
-
 <a name="create"></a>
 ## Initial setup
 
@@ -78,7 +76,7 @@ In this step, we will start an IPython Notebook server that runs inside the cont
 # sh notebook.sh
 ```
 
-You will see output on your terminal to indicate the server is running. Later, if you want to stop the notebook server, press *Control-C*. 
+You will see output on your terminal to indicate the server is running. If you want to stop the notebook server later, press *Control-C* (but do not do this now, we'll need it running in the next step)
 
 **Step 7b)** Copy the login token
 
@@ -98,6 +96,58 @@ Paste the login token you coped in the previous step to connect to the server. Y
 
 ![A picture of a directory in a web browser](../images/notebook.png?raw=true)
 
+### 8. Practice running commands inside the container, and downloading the images you create
+This steps assumes you have already started a notebook server inside the running container as described in step 7 above. We will now run a command inside the running container to create an image, then download it using the IPython Notebook server's UI.
+
+**Step 8a)** Open a second SSH window into the running container
+We use the second window to run shell commands (say, to stylize images), and later, we will use the IPython Notebook server to download the images we create to your laptop (or Chromebook). See Step 5 above if you need a reminder on how to open a SSH window.
+
+**Step 8b)** Use your web browser connected to the IPython Notebook server to open the ```shared``` directory.
+
+![Shared](../images/shared.png?raw=true)
+
+Notice, that it's empty.
+
+![Empty](../images/empty.png?raw=true)
+
+**Step 8c)** Run these commands inside the new SSH window.
+Now, we will create an image inside this directory by running a terminal command in the SSH window connected to the running container.
+
+```shell
+# cd /workshop/scripts
+# sh fast_style.sh
+```
+
+**Step 8d)** Refresh the directory, and download the image.
+
+When the command completes, refresh your browser window. You should see an image inside the shared directory.
+
+![Not empty](../images/not_empty.png?raw=true)
+
+Click on it to open it, then save it your laptop (or Chromebook) using your web browser.
+
+### 9. Practice uploading images to the container
+We will now upload an image from your Chromebook to the running container.
+
+**Step 9a)** Use a web browser to download your favorite [image](https://upload.wikimedia.org/wikipedia/commons/a/af/Cara_de_quem_caiu_do_caminh%C3%A3o..._%28cropped%29.jpg) to your laptop or Chromebook.
+
+**Step 9b)** Upload it to the shared folder using the Notebook's UI.
+
+Click the upload button:
+
+![Upload1](../images/upload1.png?raw=true)
+
+Then navigate to your image, select it, and click Open.
+
+![Upload2](../images/upload2.png?raw=true)
+
+You will see a new row in the shared directory, with a blue upload button on the far right. Click that to upload your image.
+
+![Upload3](../images/upload3.png?raw=true)
+
+And your image is now availabe on the container. The path to this directory on the container is ````/workshop/shared```.
+
+
 ## If you need to restart the container later
 
 If you later exit your container and then want to restart it again, you can find the container ID by running the following in your VM:
@@ -111,4 +161,3 @@ Once the workshop container is running again, you can exec back into it like thi
 ```shell
 docker exec -it <container_id> bash
 ```
-

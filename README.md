@@ -37,11 +37,13 @@ You can either bring a laptop, or you may use a loaner Chromebook we provide on 
 
 <a name="option1"></a>
 ### Option 1: Install locally using Docker 
-If you are bringing a laptop and want to install everything you need locally, please see these [instructions](markdown/install-local.md) to learn how to install and use the Docker image. 
+If you are bringing a laptop and want to install everything you need locally, please see these [instructions](markdown/install-local.md) to learn how to install and use the Docker image on your laptop. 
 
 <a name="option2"></a>
 ### Option 2: Prepare a Cloud VM and install Docker on it
-If you are using a loaner Chromebook, or you prefer to work in the Cloud, please see these  [instructions](markdown/install-cloud.md) to learn how to configure a Cloud-based VM and install our Docker image on it.
+If you are using a loaner Chromebook, or prefer to work in the Cloud, please see these [instructions](markdown/install-cloud.md) to learn how to configure a Cloud-based VM and install our Docker image on it.
+
+The above instructions will also walk you through the mechanics of using the image. Please practice in advance, if you have time.
 
 ### Option 3: Manual install
 If you are an experienced developer and prefer not to use Docker, you may install the libraries you need [manually](markdown/install-manual.md).

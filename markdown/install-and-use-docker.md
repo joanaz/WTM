@@ -110,7 +110,7 @@ You will see output on your terminal to indicate the server is running. Later, i
 
 **Step 6b)** Copy the login token
 
-Notice the second from the last line contains a login token. Copy this; you will need it in a moment to connect to the server.
+Notice the second from the last line contains a login token. Copy this; you will need it in a moment to connect to the server. *Note:* it will be different each time you start the server.
 
 ![Token](../images/token.png?raw=true)
 

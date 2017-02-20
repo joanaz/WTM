@@ -8,7 +8,7 @@ Use a web browser to download your favorite small [image](https://upload.wikimed
 
 *If you are running locally*
 
-Save the image to the shared folder you mounted when you started the Docker container. If you used the default directory in the [instructions](install-and-use-docker.md), this will be```~/shared```.
+Save the image to the shared folder you mounted when you started the Docker container. If you used the default directory in the [instructions](install-local.md), this will be```~/shared```.
 
 *If you are running in the Cloud*
 
@@ -49,7 +49,7 @@ In the style of this painting:
 <p align="center"><img src = '../container/sample-images/udnie.jpg' height='400px'></p>
 
 *If you are running locally*
-If everything is working properly, when it finishes, you should see a stylized image of a basset appear in ```~/shared``` on your laptop. If you don't see the image, check that you properly mounted a shared directory by referring to the [Docker instructions](markdown/install-and-use-docker.md). 
+If everything is working properly, when it finishes, you should see a stylized image of a basset appear in ```~/shared``` on your laptop. If you don't see the image, check that you properly mounted a shared directory by referring to the [Docker instructions](install-local.md). 
 
 *If you are running on the Cloud*
 If you are running in the Cloud, you will see a new file inside the ```shared``` directory in the notebook server UI (you will have to refresh your browser to see it).

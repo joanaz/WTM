@@ -1,6 +1,6 @@
 ## Project Magenta - Style Transfer Exercise
 
-These instructions assume you're familiar using the workshop Docker image as described [here](markdown/install-and-use-docker.md), and that you have completed the previous [exercise](markdown/fast-style-transfer.md) to learn the mechanics of copying images back and forth between your laptop and the running container.
+These instructions assume you're familiar using the workshop Docker image ([locally](install-local.md), or in the [Cloud](install-cloud.md)), and that you have completed the previous [exercise](fast-style-transfer.md) to learn the mechanics of copying images back and forth between your laptop and the running container.
 
 In this exercise, you'll experiment with blending different styles and images, and (optionally) upload your favorites to a shared directory so other participants can take a look. Note: the instructor should have a link to a shared folder on the slides.
 

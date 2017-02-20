@@ -4,7 +4,7 @@ Here you can find instructions for exercises during the workshop.
 ---
 
 ### Prerequisites
-These instructions assume you have Docker installed and running [locally](install-local.md), or in the [Cloud](cloud-install.md), and that you have practiced using the workshop image as described in those instructions. Make sure you know how to do these things before you start:
+These instructions assume you have Docker installed and running [locally](install-local.md), or in the [Cloud](install-cloud.md), and that you have practiced using the workshop image as described in those instructions. Make sure you know how to do these things before you start:
 
 * Start the container
 

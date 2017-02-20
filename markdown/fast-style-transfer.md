@@ -12,7 +12,7 @@ Save the image to the shared folder you mounted when you started the Docker cont
 
 *If you are running in the Cloud*
 
-Upload the image through the notebook server UI as described in the [cloud instructions](cloud-install.md).
+Upload the image through the notebook server UI as described in the [cloud instructions](install-cloud.md).
 
 ### Step 3. Understand the example script
 

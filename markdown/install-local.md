@@ -13,7 +13,7 @@ If you use the Docker image, you won't have to spend time installing any other l
 * Start an IPython notebook server inside the container, and connect to it using a web browser on your laptop
 
 ### Troubleshooting
-If you're stuck, see the Cloud-based [installation](cloud-intall.md) guide for an alternative.
+If you're stuck, see the Cloud-based [installation](install-cloud.md) guide for an alternative.
 
 ## Step 1: Install Docker on your laptop
 Visit [docker.com](https://www.docker.com) to download and install Docker on your laptop. Docker is available for Linux, Mac, and Windows.
@@ -136,4 +136,4 @@ You now know all the commands you need to use the Docker container for this work
 And start it again later using the command in *Step 4*. 
 
 ### Finished installing?
-Preview the [exercise](markdown/exercises.md) instructions, if you like.
+Preview the [exercise](exercises.md) instructions, if you like.

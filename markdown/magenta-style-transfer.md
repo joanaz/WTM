@@ -16,9 +16,9 @@ As before, upload an image using the Notebook Server UI.
 
 ## Step 2. Understand the example script
 
-<p align="center"><img src="container/sample-images/basset.jpg" height="232px"></br>Input image</p>
+<p align="center"><img src="../container/sample-images/basset.jpg" height="232px"></br>Input image</p>
 
-<p align="center"><img src="images/basset_0.png" height="232px"></br>Output image, using style 0</p>
+<p align="center"><img src="../images/basset_0.png" height="232px"></br>Output image, using style 0</p>
 
 ```
 image_stylization_transform \

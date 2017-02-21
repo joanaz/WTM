@@ -21,4 +21,4 @@ This is the simplest method. In this exercise, you'll stylize an image you provi
 Here, you will stilize an image by mixing and matching up to 32 different styles at the same time (you can even specify exactly how much of each style you'd like blended in). Sound interesting? Head on over to the [instructions](magenta-style-transfer.md).
 
 ## Basic MNIST
-TODO [instructions](basic_mnist.md).
+Write a basic classifier for handwritten digit using TensorFlow's high level API following these [instructions](basic_mnist.md).

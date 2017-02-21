@@ -1,1 +1,1 @@
-TODO
+TODO - TLDR, go through https://github.com/random-forests/WTM/tree/master/container/notebooks #5; Also needs to be updated to reflect new APIs and naming.

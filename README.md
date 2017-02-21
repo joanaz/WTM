@@ -26,7 +26,7 @@ As time remains, you'll also gain experience writing a basic TensorFlow program.
 <p align="center">
 <img src = 'images/digit.png' width='28px'>
 <br/>
-Good olde MNIST.
+Good olde MNIST
 </p>
 
 <a name="install"></a>

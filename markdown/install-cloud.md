@@ -13,6 +13,8 @@ Sign up for a [free trial](https://cloud.google.com/free-trial/) of Google Cloud
 
 #### 1.1 Enable the necessary APIs
 
+1. Go to the Google Cloud console: console.cloud.google.com
+1. Select or create a project using the project drop-down at upper-left ('My First Project' in image below)
 1. Click on the “hamburger” menu at upper-left, and then “API Manager”.
 1. On the left nav, choose "Dashboard" if not already selected, then choose "+Enable API" in the top-middle of page.
 1. Enter "Google Compute Engine API" in the search box and click it when it appears in the list of results.
@@ -26,7 +28,7 @@ Sign up for a [free trial](https://cloud.google.com/free-trial/) of Google Cloud
 
 Click on the Cloud Shell icon (leftmost icon in the set of icons at top-right of the page).
 
-![Cloud Shell](../images/cloudshell.png)
+![Cloud Shell](../images/cloudshell2.jpg)
 
 ### 3. Create a container-optimized image in GCE
 
@@ -51,7 +53,9 @@ gcloud compute firewall-rules create workshop --allow tcp:8888
 ### 5. SSH into the new GCE instance, in a new browser window
 
 - Click on the “hamburger” menu at upper-left, and then “Compute Engine”
-- Find your instance in the list (mid-page) and click on the “SSH” pulldown menu on the right. Select “Open in browser window”.
+- Find your instance in the list (mid-page)
+- Write down the "External IP", this is the IP of your Cloud instance
+- Logon to instance by clicking on the “SSH” pulldown menu on the right. Select “Open in browser window”.
 - A new browser window will open, with a command line into your GCE instance.
 
 ### 6. Start the Docker container in the GCE image (in the newly opened SSH browser window):
@@ -86,13 +90,13 @@ Notice the second from the last line contains a login token. Copy this; you will
 
 **Step 7c)** Use a web browser on your laptop or Chromebook to connect to the server
 
-Open a web browser on your laptop. Enter ```localhost:8888``` in the address bar.
+Open a web browser on your laptop. Use the "External IP" from step #5 followed by :8888, i.e. ```<External_IP>:8888``` in the address bar.
 
 Your browser window should look like this. 
 
 ![Login screen](../images/login.png?raw=true)
 
-Paste the login token you coped in the previous step to connect to the server. Your window should now look like this.
+Paste the login token you coped in the previous step to connect to the server (if you copy/paste, make sure there is no newline splitting the token value, i.e. that you are pasting the token value printed on a single line). Your window should now look like this.
 
 ![A picture of a directory in a web browser](../images/notebook.png?raw=true)
 
@@ -100,7 +104,11 @@ Paste the login token you coped in the previous step to connect to the server. Y
 This steps assumes you have already started a notebook server inside the running container as described in step 7 above. We will now run a command inside the running container to create an image, then download it using the IPython Notebook server's UI.
 
 **Step 8a)** Open a second SSH window into the running container
-We use the second window to run shell commands (say, to stylize images), and later, we will use the IPython Notebook server to download the images we create to your laptop (or Chromebook). See Step 5 above if you need a reminder on how to open a SSH window.
+We use the second window to run shell commands (say, to stylize images), and later, we will use the IPython Notebook server to download the images we create to your laptop (or Chromebook).
+This is what you need to do:
+- Do SSH logon to your GCE instance (see step 5 above on how to do that)
+- Then logon to your docker instance by typing: docker run -v ~/shared:/workshop/shared -it randomforests/wtm:v1
+  (note, omit the "-p 8888:8888" flag from step 5, since our notebook server uses that port map already)
 
 **Step 8b)** Use your web browser connected to the IPython Notebook server to open the ```shared``` directory.
 

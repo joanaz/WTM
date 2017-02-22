@@ -94,6 +94,8 @@ Open a web browser on your laptop. Use the "External IP" from step #5 followed b
 
 Your browser window should look like this. 
 
+**Note:** in the address bar, you will have entered the external IP address of your Cloud VM instead of 'localhost'.
+
 ![Login screen](../images/login.png?raw=true)
 
 Paste the login token you coped in the previous step to connect to the server (if you copy/paste, make sure there is no newline splitting the token value, i.e. that you are pasting the token value printed on a single line). Your window should now look like this.

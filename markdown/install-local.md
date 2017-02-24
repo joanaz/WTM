@@ -50,7 +50,7 @@ In this step, we'll start the container. We'll use command line arguments to mou
 $ docker run -it -p 8888:8888 -v ~/shared:/workshop/shared randomforests/wtm:v1
 ```
 
-Long command, right? Here's an explination of the arguments
+Long command, right? Here's an explanation of the arguments.
 
 * ```-v ~/shared:/workshop/shared``` mounts ```~/shared``` on your laptop as ```/workshop/shared``` inside the container.
 
@@ -89,7 +89,7 @@ Note, in the following instructions:
 
 **Step 5b)**  Create a file inside the shared directory using the container, then verify you can see it on your laptop.
 
-* From the terminal connected to the container, run ```# touch /workshop/shared/foo.bar``` This will create an emtpy file called.
+* From the terminal connected to the container, run ```# touch /workshop/shared/foo.bar```. This will create an empty file called *foo.bar*.
 
 * On your laptop, you should now see *foo.bar* inside ```~/shared```. Feel free to delete it.
 

@@ -31,7 +31,7 @@ Good olde MNIST
 
 <a name="install"></a>
 # Installation instructions
-Our goal is to make it as easy as possible for you to particapte in the workshop. 
+Our goal is to make it as easy as possible for you to participate in the workshop. 
 
 You can either bring a laptop, or you may use a loaner Chromebook we provide on site. Either way, please install the software you need in advance (either on your laptop, or, by preparing a Cloud VM) as described in these instructions.
 

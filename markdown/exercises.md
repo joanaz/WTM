@@ -15,10 +15,10 @@ These instructions assume you have Docker installed and running ([locally](insta
 The commands in each exercise assume you are using the Docker image. If you have installed these libraries another way, see their github pages.
 
 ## Fast Style Transfer
-This is the simplest method. In this exercise, you'll stylize an image you provide to resemeble work by one five different artists. Click [here](fast-style-transfer.md) for instructions.
+This is the simplest method. In this exercise, you'll stylize an image you provide to resemble work by one of five different artists. Click [here](fast-style-transfer.md) for instructions.
 
 ## Magenta - Style Transfer
-Here, you will stilize an image by mixing and matching up to 32 different styles at the same time (you can even specify exactly how much of each style you'd like blended in). Sound interesting? Head on over to the [instructions](magenta-style-transfer.md).
+Here, you will stylize an image by mixing and matching up to 32 different styles at the same time (you can even specify exactly how much of each style you'd like blended in). Sound interesting? Head on over to the [instructions](magenta-style-transfer.md).
 
 ## Basic MNIST
-Write a basic classifier for handwritten digit using TensorFlow's high level API following these [instructions](basic_mnist.md).
+Write a basic classifier for handwritten digit recognition using TensorFlow's high-level API following these [instructions](basic_mnist.md).

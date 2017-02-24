@@ -78,4 +78,4 @@ Experiment with different images and styles, and (optionally) upload your favori
 See [this page](https://github.com/tensorflow/magenta/tree/master/magenta/models/image_stylization).
 
 ### Next steps
-Why not experiment generating [music](https://github.com/tensorflow/magenta)? 
+Why not experiment with generating [music](https://github.com/tensorflow/magenta)? 

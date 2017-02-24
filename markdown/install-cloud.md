@@ -30,9 +30,11 @@ Click on the Cloud Shell icon (leftmost icon in the set of icons at top-right of
 
 ![Cloud Shell](../images/cloudshell2.jpg)
 
+Click on "Start Cloud Shell" on the bottom right of the pop-up screen. You should now see a terminal at the bottom of your window for the Cloud Shell with the text "Welcome to Cloud Shell! Type "help" to get started."
+
 ### 3. Create a container-optimized image in GCE
 
-Run this command in the Cloud Shell
+Run this command in the Cloud Shell.
 
 ```shell
 gcloud compute instances create workshop \
@@ -56,7 +58,7 @@ gcloud compute firewall-rules create workshop --allow tcp:8888
 - Find your instance in the list (mid-page)
 - Write down the "External IP", this is the IP of your Cloud instance
 - Logon to instance by clicking on the “SSH” pulldown menu on the right. Select “Open in browser window”.
-- A new browser window will open, with a command line into your GCE instance.
+- A new browser window will open, with a command line into your GCE instance. Confirm that you wish to initiate an SSH connection to the instance.
 
 ### 6. Start the Docker container in the GCE image (in the newly opened SSH browser window):
 
@@ -82,7 +84,7 @@ In this step, we will start an IPython Notebook server that runs inside the cont
 
 You will see output on your terminal to indicate the server is running. If you want to stop the notebook server later, press *Control-C* (but do not do this now, we'll need it running in the next step)
 
-**Step 7b)** Copy the login token
+**Step 7b)** Copy the login token.
 
 Notice the second from the last line contains a login token. Copy this; you will need it in a moment to connect to the server.
 
@@ -105,11 +107,11 @@ Paste the login token you coped in the previous step to connect to the server (i
 ### 8. Practice running commands inside the container, and downloading the images you create
 This steps assumes you have already started a notebook server inside the running container as described in step 7 above. We will now run a command inside the running container to create an image, then download it using the IPython Notebook server's UI.
 
-**Step 8a)** Open a second SSH window into the running container
+**Step 8a)** Open a second SSH window into the running container.
 We use the second window to run shell commands (say, to stylize images), and later, we will use the IPython Notebook server to download the images we create to your laptop (or Chromebook).
 This is what you need to do:
 - Do SSH logon to your GCE instance (see step 5 above on how to do that)
-- Then logon to your docker instance by typing: docker run -v ~/shared:/workshop/shared -it randomforests/wtm:v1
+- Then logon to your docker instance by typing: ```docker run -v ~/shared:/workshop/shared -it randomforests/wtm:v1```
   (note, omit the "-p 8888:8888" flag from step 5, since our notebook server uses that port map already)
 
 **Step 8b)** Use your web browser connected to the IPython Notebook server to open the ```shared``` directory.
@@ -120,17 +122,16 @@ Notice, that it's empty.
 
 ![Empty](../images/empty.png?raw=true)
 
-**Step 8c)** Run these commands inside the new SSH window.
-Now, we will create an image inside this directory by running a terminal command in the SSH window connected to the running container.
+**Step 8c)** Now, we will create an image inside this directory by running a terminal command in the SSH window connected to the running container.
 
-```shell
+Run these commands inside the new SSH window.
+
+```
 # cd /workshop/scripts
 # sh fast_style.sh
 ```
 
-**Step 8d)** Refresh the directory, and download the image.
-
-When the command completes, refresh your browser window. You should see an image inside the shared directory.
+**Step 8d)** When the command completes, refresh your browser window. You should see an image inside the shared directory.
 
 ![Not empty](../images/not_empty.png?raw=true)
 
@@ -155,7 +156,7 @@ You will see a new row in the shared directory, with a blue upload button on the
 
 ![Upload3](../images/upload3.png?raw=true)
 
-And your image is now availabe on the container. The path to this directory on the container is ```/workshop/shared```.
+And your image is now available on the container. The path to this directory on the container is ```/workshop/shared```.
 
 ## If you need to restart the container later
 

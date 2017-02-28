@@ -64,7 +64,7 @@ Notice the format for this argument is a Python dictionary of Style -> Weight.
 
 This will equally blend styles 0 and 31, each with a weight of 0.5 (note, these weights aren't normalized). You can blend any number of styles at the same time.
 
-<p align="center"><img src="../images/blended.jpg" height="311px"></br>Weighted combination of styles 0 and 31</p>
+<p align="center"><img src="../images/blended.jpg" height="224px"></br>Weighted combination of styles 0 and 31</p>
 
 Experiment with different images and styles.
 

@@ -52,7 +52,7 @@ Now it's time to use different styles. You can see images of all the available s
 Experiment with different styles and input images.
 
 ## Blend styles
-You can also blend styles using a weighted combination (to specify how much of each style you'd like!). Here's the syntax. The only argument you'll need to change is ```--which-styles```, which will become a Python dictionary of style number -> weight.
+You can also blend styles using a weighted combination. This enables you to specify how much of each style you'd like! Here's the syntax. The only argument you'll need to change from above is ```--which-styles```.
 
 For example:
 
@@ -60,11 +60,11 @@ For example:
 -- which_styles="{0:0.5,31:0.5}
 ```
 
-This will equally blend styles 0 and 31, each with a weight of 0.5 (note, that weights aren't normalized). You can blend any number of styles (note, this model has 32 styles, numbered from 0 to 31).
+Notice the format for this argument is a Python dictionary of Style -> Weight.
+
+This will equally blend styles 0 and 31, each with a weight of 0.5 (note, these weights aren't normalized). You can blend any number of styles at the same time.
 
 <p align="center"><img src="../images/blended.jpg" height="311px"></br>Weighted combination of styles 0 and 31</p>
-
-This will blend style 6 with weight 0.7 and style 7 with weight 0.3. As before, you can blend any number of styles. Notice the syntax here is a Python dictionary of style -> weight.
 
 Experiment with different images and styles.
 

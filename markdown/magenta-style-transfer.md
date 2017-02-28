@@ -43,11 +43,11 @@ Upload an image to the shared directory using the Notebook Server UI. This is mo
 First, try running this script with the default arguments, and verify you see a stylized image appear in ```~/shared``` when it completes. *If you are running on the Cloud* you will have to refresh your web browser after the script completes. Next, change the ```input-image``` to point to your image, and verify you can stylize it.
 
 ## Try different styles
-Now it's time to use different styles. You can see images of all the available styles in the pre-trained varied mode [here](https://goo.gl/1UDjBE). Here are a couple:
+Now it's time to use different styles. You can see images of all the available styles in the pre-trained varied mode [here](https://goo.gl/1UDjBE).
 
-<p align="center"><img src="../images/basset_1.png" height="232px"></br>Style 1</p>
+<p align="center"><img src="../images/styles_0-17" height="400px"></br>Style 0 -- 17</p>
 
-<p align="center"><img src="../images/basset_19.png" height="232px"></br>Style 19</p>
+<p align="center"><img src="../images/styles_18-31" height="400px"></br>Styles 18 -- 31</p>
 
 Experiment with different styles and input images. If you produce one you really like, considered uploading it for other folks to see.
 

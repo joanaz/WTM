@@ -62,7 +62,7 @@ For example:
 
 This will equally blend styles 0 and 31, each with a weight of 0.5 (note, that weights aren't normalized). You can blend any number of styles (note, this model has 32 styles, numbered from 0 to 31).
 
-<p align="center"><img src="../images/blended.jpg" height="400px"></br>Weighted combination of styles 0 and 31</p>
+<p align="center"><img src="../images/blended.jpg" height="311px"></br>Weighted combination of styles 0 and 31</p>
 
 This will blend style 6 with weight 0.7 and style 7 with weight 0.3. As before, you can blend any number of styles. Notice the syntax here is a Python dictionary of style -> weight.
 

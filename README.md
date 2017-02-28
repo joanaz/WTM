@@ -38,16 +38,16 @@ You can either bring a laptop, or you may use a loaner Chromebook we provide on 
 The easiest way is to use a Docker image we provide. 
 
 <a name="option1"></a>
-### Option 1: Install locally 
+### Option 1: Use our Docker image on your laptop
 
 If you are bringing a laptop and want to install everything you need locally, please see these [instructions](markdown/install-local.md) to learn how to install and use the Docker image on your laptop. 
 
 <a name="option2"></a>
-### Option 2: Prepare a Cloud VM
+### Option 2: Use our Docker image on the Cloud
 
 If you are using a loaner Chromebook, or prefer to work in the Cloud, please see these [instructions](markdown/install-cloud.md) to learn how to configure a Cloud-based VM, and how to install and use the Docker image on it.
 
-### Option 3: Manual install
+### Option 3: Install TensorFlow directly on your laptop
 If you are an experienced developer and prefer not to use Docker, you may install the libraries you need [manually](markdown/install-manual.md).
 
 <a name="exercise"></a>

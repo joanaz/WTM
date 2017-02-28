@@ -2,7 +2,7 @@
 
 These instructions assume you're familiar using the workshop Docker image ([locally](install-local.md), or in the [Cloud](install-cloud.md)), and that you have completed the previous [exercise](fast-style-transfer.md) to learn the mechanics of copying images back and forth between your laptop and the running container.
 
-In this exercise, you'll experiment with blending different styles and images, and (optionally) upload your favorites to a shared directory so other participants can take a look. Note: the instructor should have a link to a shared folder on the slides.
+In this exercise, you'll experiment with blending different styles and images.
 
 ## Step 1. Find an image to stylize
 
@@ -49,30 +49,27 @@ Now it's time to use different styles. You can see images of all the available s
 
 <p align="center"><img src="../images/styles_18-31.png" height="400px"></br>Styles 18 -- 31</p>
 
-Experiment with different styles and input images. If you produce one you really like, considered uploading it for other folks to see.
+Experiment with different styles and input images.
 
 ## Blend styles
-You can also blend styles (and even specify how much of each style you'd like!). Here's the syntax. The only argument you'll need to change is ```--which-styles```.
+You can also blend styles using a weighted combination (to specify how much of each style you'd like!). Here's the syntax. The only argument you'll need to change is ```--which-styles```, which will become a Python dictionary of style number -> weight.
 
 For example:
 
 ```
---which_styles="[0,1]"
+-- which_styles="{0:0.5,31:0.5}
 ```
 
-This will equally blend styles 0 and 1. You can blend any number of styles (note: this model has 32 styles, numbered from 0 to 31). Notice the syntax here is a Python list.
+This will equally blend styles 0 and 31, each with a weight of 0.5 (note, that weights aren't normalized). You can blend any number of styles (note, this model has 32 styles, numbered from 0 to 31).
 
-You can also use a weighted combination of styles. For example:
-
-```
---which_styles="{6:0.7,7:0.3}"
-```
-
-<p align="center"><img src="../images/basset_6_700_7_300.png" height="232px"></br>Weighted combination of styles 6 and 7</p>
+<p align="center"><img src="../images/blended.jpg" height="400px"></br>Weighted combination of styles 0 and 31</p>
 
 This will blend style 6 with weight 0.7 and style 7 with weight 0.3. As before, you can blend any number of styles. Notice the syntax here is a Python dictionary of style -> weight.
 
-Experiment with different images and styles, and (optionally) upload your favorites.
+Experiment with different images and styles.
+
+### Share your favorites
+Did you produce an image you really like? Consider sharing it on social, using the hashtag ```#WTM17```.
 
 ### For more details
 See [this page](https://github.com/tensorflow/magenta/tree/master/magenta/models/image_stylization).

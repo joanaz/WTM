@@ -74,7 +74,6 @@ For example, imagine your image is saved as ```cat.jpg``` inside the shared dire
 
 First, upload your image to the ```shared``` folder using the notebook server's UI, then run the above command.
 
-
 ### Step 5. Try a different style
 
 Want to change the style? The author of the github repo we're using has helpfully provided several pre-trained models for different styles that you can choose from. These are already included in the Docker image.
@@ -95,6 +94,9 @@ You will see a list of models:
 You can see what the corresponding paintings look like by visiting [this site](https://github.com/lengstrom/fast-style-transfer/tree/master/examples/style).
 
 To select a different style, change this argument ```--checkpoint /workshop/fast-style-transfer/models/udnie.ckpt``` to point to any of those files, and run the style transfer command again.
+
+### Share your favorites
+Did you produce an image you really like? Consider sharing it on social, using the hashtag ```#WTM17```.
 
 ### For more details
 See [this page](https://github.com/lengstrom/fast-style-transfer/).

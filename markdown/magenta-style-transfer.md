@@ -45,9 +45,9 @@ First, try running this script with the default arguments, and verify you see a 
 ## Try different styles
 Now it's time to use different styles. You can see images of all the available styles in the pre-trained varied mode [here](https://goo.gl/1UDjBE).
 
-<p align="center"><img src="../images/styles_0-17" height="400px"></br>Style 0 -- 17</p>
+<p align="center"><img src="../images/styles_0-17.png" height="400px"></br>Style 0 -- 17</p>
 
-<p align="center"><img src="../images/styles_18-31" height="400px"></br>Styles 18 -- 31</p>
+<p align="center"><img src="../images/styles_18-31.png" height="400px"></br>Styles 18 -- 31</p>
 
 Experiment with different styles and input images. If you produce one you really like, considered uploading it for other folks to see.
 

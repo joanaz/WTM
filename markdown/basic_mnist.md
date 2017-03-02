@@ -2,11 +2,13 @@
 
 ### Prework
 
-During this exercise, we will run code inside a [Jupyter](https://www.jupyter.org/) (aka IPython) notebook to train a basic classifier for handwritten digits. Before getting started, please make sure you have installed and started the Docker container, either [locally](install-local.md) or on the [Cloud](install-cloud.md).
+During this exercise, we will run code inside a [Jupyter](https://www.jupyter.org/) notebook to train a basic classifier to recognize handwritten digits. Before getting started, please make sure you have installed and started the Docker container, either [locally](install-local.md) or on the [Cloud](install-cloud.md).
 
 New to Jupyter notebooks?
 
 * Try this [tutorial](https://try.jupyter.org/) (after opening the webpage, click on the "Welcome to Python" notebook) to learn the ropes.
+
+First, we will experiment with an early version of TensorFlow's high level APIs. Next, we will dive a little deeper and work with lower level code.
 
 ### Step 1. Start and connect to the notebook server
 
@@ -28,13 +30,15 @@ Once you've opened the notebook, your screen should look something like this:
 
 ### Step 3. Run each cell and try to understand the code
 
-You may want to spend 5 or 10 minutes exploring this notebook. It uses an early version of TensorFlow's high level APIs. At the end is a short exercise in which you will replace the linear classifier with a deep neural network. This should only involve changing one line of code. *Note* the code in this notebook is written for TensorFlow v0.12rc. Recently, version 1.0 was released (yay!) The author of this repo hasn't had a chance to update this code yet (for our purposes, there's not a major difference).
+You may want to spend 5 or 10 minutes exploring this notebook. It uses an early version of TensorFlow's high level APIs. At the end is a short exercise in which you will replace the linear classifier with a deep neural network. This should only involve changing one line of code. 
+
+*Note* the code in this notebook is written for TensorFlow v0.12rc. Recently, version 1.0 was released (yay!) The author of this repo hasn't had a chance to update this code yet (for our purposes, there's not a major difference).
 
 ### Step 4. Experiment with notebooks 1 through 4 for a deeper dive in to TensorFlow
 
 Next, open and experiment with notebooks 1 through 4. These will show you how to write a neural network to classify handwritten digits using TensorFlow's core APIs. Open each notebook and follow the instructions there. Here's a description of each notebook:
 
-* Notebook #1: roughly follows this [tutorial](https://www.tensorflow.org/get_started/mnist/beginners). We recommend you read the tutorial, then work through the notebook to try it for yourself. This may take 20 minutes or so, there's a lot of information there if you're new to the subject.
+* Notebook #1: roughly follows this [tutorial](https://www.tensorflow.org/get_started/mnist/beginners). To begin, we **recommend** you read the tutorial, then work through the notebook and try it for yourself. This may take about 20 minutes.
 
 * Notebook #2: solution to the exercise from the previous notebook.
 

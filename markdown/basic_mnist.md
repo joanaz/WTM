@@ -18,15 +18,15 @@ Start the notebook server inside the running container, then to connect to it us
 
 * If you are running the container in a Cloud-VM, see step #7 of these [instructions](install-cloud.md).
 
-### Step 2. Open the notebook titled "5_tf_contrib_learn.ipynb" for a high level intro
+### Step 2. Open the first notebook, titled "1_tf_contrib_learn.ipynb" for a high level intro
 
 After you connect to the notebook server, click on the *notebooks* folder, then open *5_tf_contrib_learn.ipynb*.
 
-![Token](../images/notebook_5.png?raw=true)
+![Token](../images/notebook_1.png?raw=true)
 
 Once you've opened the notebook, your screen should look something like this:
 
-![Token](../images/notebook_5_open.png?raw=true)
+![Token](../images/notebook_1_open.png?raw=true)
 
 ### Step 3. Run each cell and try to understand the code
 
@@ -34,14 +34,14 @@ You may want to spend 5 or 10 minutes exploring this notebook. It uses an early 
 
 *Note* the code in this notebook is written for TensorFlow v0.12rc. Recently, version 1.0 was released (yay!) The author of this repo hasn't had a chance to update this code yet (for our purposes, there's not a major difference).
 
-### Step 4. Experiment with notebooks 1 through 4 for a deeper dive in to TensorFlow
+### Step 4. Experiment with notebooks 2 through 5 for a deeper dive in to TensorFlow
 
 Next, open and experiment with notebooks 1 through 4. These will show you how to write a neural network to classify handwritten digits using TensorFlow's core APIs. Open each notebook and follow the instructions there. Here's a description of each notebook:
 
-* Notebook #1: roughly follows this [tutorial](https://www.tensorflow.org/get_started/mnist/beginners). To begin, we **recommend** you read the tutorial, then work through the notebook and try it for yourself. This may take about 20 minutes.
+* Notebook #2: roughly follows this [tutorial](https://www.tensorflow.org/get_started/mnist/beginners). To begin, we **recommend** you read the tutorial, then work through the notebook and try it for yourself. This may take about 20 minutes.
 
-* Notebook #2: solution to the exercise from the previous notebook.
+* Notebook #3: solution to the exercise from the previous notebook.
 
-* Notebook #3: code for a single layer hidden neural network, and an exercise to convert it into a two layer DNN.
+* Notebook #4: code for a single layer hidden neural network, and an exercise to convert it into a two layer DNN.
 
-* Notebook #4: solution to the exercise from the previous notebook.
+* Notebook #5: solution to the exercise from the previous notebook.
